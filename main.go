@@ -101,10 +101,6 @@ func getSourceMap(source string, headers []string, insecureTLS bool, proxyURL ur
 			log.Fatalln(err) // == return m, err
 		}
 
-		if res.StatusCode != 200 {
-			return m, fmt.Errorf("sourceMap URL request return != 200")
-		}
-
 		body, err = ioutil.ReadAll(res.Body)
 		defer res.Body.Close()
 		if err != nil {
