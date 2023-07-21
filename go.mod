@@ -1,3 +1,3 @@
-module github.com/denandz/sourcemapper
+module github.com/molitona/sourcemapper
 
 go 1.16
